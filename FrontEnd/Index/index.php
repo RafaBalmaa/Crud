@@ -9,11 +9,11 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina De Acesso</title>
-    <link rel="shortcut icon" href="../Acesso/imagens/Favicon/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="../../BackEnd/Acesso/carrossel/slick.css" /> 
-    <link rel="stylesheet" type="text/css" href="../../BackEnd/Acesso/carrossel/slick-theme.css" /> 
-    <link rel="stylesheet" href="../Acesso/style/style_acesso.css" />  
-    <link rel="stylesheet" href="../Acesso/style/style_comentario.css" />
+    <link rel="shortcut icon" href="../Favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="style/slick.css" /> 
+    <link rel="stylesheet" type="text/css" href="style/slick-theme.css" />
+    <link rel="stylesheet" href="style/style_acesso.css" />
+    <link rel="stylesheet" href="style/style_comentario.css" />
 </head>
 
 <body id="body">
@@ -21,7 +21,7 @@ session_start();
         <header id="header" class="header" >
             <div class="kabum">
                 <div>
-                    <a href="https://www.kabum.com.br" target="_blank"><img class="logo" src="../Acesso/imagens/kabum-logo-1.png"
+                    <a href="https://www.kabum.com.br" target="_blank"><img class="logo" src="../imagens/kabum-logo-1.png"
                     alt="Logo KBM"></a>
                 </div>
                 <div id="login">
@@ -67,7 +67,7 @@ session_start();
                 </p>
 
                 <picture>
-                    <img src="../Acesso/imagens/kabum.png" alt="Mascote KaBuM!">
+                    <img src="../imagens/kabum.png" alt="Mascote KaBuM!">
                 </picture>
             </section>
             
@@ -82,7 +82,7 @@ session_start();
                     gamers.
                 </p>
 
-                <img src="../Acesso/imagens/Captura de tela de 2022-03-09 10-28-10.png"
+                <img src="../imagens/Captura de tela de 2022-03-09 10-28-10.png"
                     alt="Irina Blok, criadora do Bugdroid"></abbr>
 
                 <p class="text-white">
@@ -95,31 +95,31 @@ session_start();
                     </b></p>
                     <abbr class="text-white" title="Cadeira Gamer">Cadeiras Gamer</abbr>
                     <div class="carousel">
-                        <div><img class="cadeira1" src="../Acesso/perifericos_img/cadeira1-removebg-preview.png"alt="cadeira gamer 1" /></div>
-                        <div><img class="cadeira2" src="../Acesso/perifericos_img/cadeira2-removebg-preview.png"alt="Cadeira Gamer 2" /></div>
-                        <div><img class="cadeira3" src="../Acesso/perifericos_img/cadeira3-removebg-preview.png"alt="Cadeira Gamer 3" /></div>
-                        <div><img class="cadeira4" src="../Acesso/perifericos_img/cadeira4-removebg-preview.png"alt="Cadeira Gamer 4" /></div>
+                        <div><img class="cadeira1" src="../imagens/cadeira1.png"alt="cadeira gamer 1" /></div>
+                        <div><img class="cadeira2" src="../imagens/cadeira2.png"alt="Cadeira Gamer 2" /></div>
+                        <div><img class="cadeira3" src="../imagens/cadeira3.png"alt="Cadeira Gamer 3" /></div>
+                        <div><img class="cadeira4" src="../imagens/cadeira4.png"alt="Cadeira Gamer 4" /></div>
                     </div>
                     <abbr class="text-white" title="Mouses Gamer">Mouses Gamer</abbr>
                     <div class="carousel">
-                        <div><img class="mouse1" src="../Acesso/perifericos_img/mouse1.png" alt=""/></div>
-                        <div><img class="mouse2" src="../Acesso/perifericos_img/mouse2-removebg-preview.png" alt=""/></div>
-                        <div><img class="mouse3" src="../Acesso/perifericos_img//mouse3-removebg-preview.png" alt=""/></div>
-                        <div><img class="mouse4" src="../Acesso/perifericos_img/mouse4-removebg-preview.png" alt=""/></div>
+                        <div><img class="mouse1" src="../imagens/mouse1.png" alt=""/></div>
+                        <div><img class="mouse2" src="../imagens/mouse2-.png" alt=""/></div>
+                        <div><img class="mouse3" src="../imagens//mouse3-.png" alt=""/></div>
+                        <div><img class="mouse4" src="../imagens/mouse4-.png" alt=""/></div>
                     </div>
                     <abbr class="text-white" title="Teclados Gamer">Teclados Gamer</abbr>
                     <div class="carousel">
-                        <div><img class="teclado1" src="../Acesso/perifericos_img/teclado1-removebg-preview.png" alt=""/></div>
-                        <div><img class="teclado2" src="../Acesso/perifericos_img/teclado2-removebg-preview.png" alt=""/></div>
-                        <div><img class="teclado3" src="../Acesso/perifericos_img/teclado3-removebg-preview.png" alt=""/></div>
-                        <div><img class="teclado4" src="../Acesso/perifericos_img/teclado4-removebg-preview.png" alt=""/></div>
+                        <div><img class="teclado1" src="../imagens/teclado1.png" alt=""/></div>
+                        <div><img class="teclado2" src="../imagens/teclado2.png" alt=""/></div>
+                        <div><img class="teclado3" src="../imagens/teclado3.png" alt=""/></div>
+                        <div><img class="teclado4" src="../imagens/teclado4.png" alt=""/></div>
                     </div>
                     <abbr class="text-white" title="Headset Game">Headset Gamer</abbr>
                     <div class="carousel">
-                        <div><img class="fone1" src="../Acesso/perifericos_img/fone1-removebg-preview.png" alt=""/></div>
-                        <div><img class="fone2" src="../Acesso/perifericos_img/fone2-removebg-preview.png" alt=""/></div>
-                        <div><img class="fone3" src="../Acesso/perifericos_img/fone3-removebg-preview.png" alt=""/></div>
-                        <div><img class="fone4" src="../Acesso/perifericos_img/fone4-removebg-preview.png" alt=""/></div>
+                        <div><img class="fone1" src="../imagens/fone1.png" alt=""/></div>
+                        <div><img class="fone2" src="../imagens/fone2.png" alt=""/></div>
+                        <div><img class="fone3" src="../imagens/fone3.png" alt=""/></div>
+                        <div><img class="fone4" src="../imagens/fone4.png" alt=""/></div>
                     </div>
                 <p class="p">
                     <b>Isso e só um Gostinho da nossa marca.</b>
@@ -141,14 +141,14 @@ session_start();
 
                 <div class="box">
                     <div class="imagem">
-                        <img class="time" src="../Acesso/imagens/MURILO.JPG" alt="Murilo">
+                        <img class="time" src="../imagens/MURILO.JPG" alt="Murilo">
                         <div class="texto">
                             <p class="padding"><b >Gerente de Operações de T.I. e Integrações</b><br>
                                 Apaixonado por tecnologia e está sempre em busca de evolução.</p>
                         </div>
                     </div>
                     <div class="imagem">
-                        <img class="time" src="../Acesso/imagens/CLEITAO.png" alt="Cleiton">
+                        <img class="time" src="../imagens/CLEITAO.png" alt="Cleiton">
                         <div class="texto">
                             <p class="padding"><b >Analista de Desenvolvimento</b><br>Ama cantar e ouvir qualquer estilo
                                 de música.
@@ -157,7 +157,7 @@ session_start();
                         </div>
                     </div>
                     <div class="imagem">
-                        <img class="time" src="../Acesso/imagens/CAROL.png" alt="Carol">
+                        <img class="time" src="../imagens/CAROL.png" alt="Carol">
                         <div class="texto">
                             <p class="padding"><b>Analista de Desenvolvimento</b><br>Busca sempre estar em constante
                                 aprendizado, tanto em sua área de atuação quanto em várias coisas que podem a ajudar no
@@ -166,14 +166,14 @@ session_start();
                         </div>
                     </div>
                     <div class="imagem">
-                        <img class="time" src="../Acesso/imagens/Eric.JPG" alt="Eric">
+                        <img class="time" src="../imagens/Eric.JPG" alt="Eric">
                         <div class="texto">
                             <p class="padding"><b>Analista de Desenvolvimento de Sistemas</b><br>
 Seu estilo favorito de música é rock! Adora assistir filmes e séries, além de platinar jogos do PS4. Apaixonado por programação e trabalhar como Dev. </p>
                         </div>
                     </div>
                     <div class="imagem">
-                        <img class="time" src="../Acesso/imagens/ronaldo.JPG" alt="Ronaldo">
+                        <img class="time" src="../imagens/ronaldo.JPG" alt="Ronaldo">
                         <div class="texto">
                             <p class="padding"><b>Assistente de Desenvolvimento de Sistemas</b><br>Natural de Santa Rosa
                                 de Viterbo - SP.
@@ -185,13 +185,13 @@ Seu estilo favorito de música é rock! Adora assistir filmes e séries, além d
                         </div>
                     </div>
                     <div class="imagem">
-                        <img class="time" src="../Acesso/imagens/Bruno.JPG" alt="Bruno">
+                        <img class="time" src="../imagens/Bruno.JPG" alt="Bruno">
                         <div class="texto">
                             <p class="padding"><b>Assistente de Desenvolvimento de Sistemas</b><br>Gosta de leituras ao ar livre e no tempo livre costuma se distrair com jogos online.</p>
                         </div>
                     </div>
                     <div class="imagem">
-                        <img class="time" src="../Acesso/imagens/vINI.JPG" alt="Vini">
+                        <img class="time" src="../imagens/vINI.JPG" alt="Vini">
                         <div class="texto">
                             <p class="padding"><b>Assistente de Desenvolvimento de Sistemas</b><br>Cursando técnico de
                                 Desenvolvimento de Sistemas do COTIL,
@@ -202,19 +202,19 @@ Seu estilo favorito de música é rock! Adora assistir filmes e séries, além d
                         </div>
                     </div>
                     <div class="imagem">
-                        <img class="time" src="../Acesso/imagens/Renan.JPG" alt="Renan">
+                        <img class="time" src="../imagens/Renan.JPG" alt="Renan">
                         <div class="texto">
                             <p class="padding"><b>Assistente de Desenvolvimento de Sistemas</b><br>Gosta de assistir séries, filmes, futebol e games.</p>
                         </div>
                     </div>
                     <div class="imagem">
-                        <img class="time" src="../Acesso/imagens/Lucas.JPG" alt="Lucas">
+                        <img class="time" src="../imagens/Lucas.JPG" alt="Lucas">
                         <div class="texto">
                             <p class="padding"><b>Estagiário de Desenvolvimento de Sistemas</b><br>Tem um gato e é fã de jogos competitivos como Overwatch e xadrez.</p>
                         </div>
                     </div>
                     <div class="imagem">
-                        <img class="time" src="../Acesso/imagens/Dani.jpg" alt="Dani">
+                        <img class="time" src="../imagens/Dani.jpg" alt="Dani">
                         <div class="texto">
                             <p class="padding"><b>Estagiaria</b><br>Estagiária vinda da FATEC do curso de jogos digitais.
                                 Jogadora de LOL, amante de músicas dos anos 80 e gosta de passar nervoso com programação.<br>
@@ -222,7 +222,7 @@ Seu estilo favorito de música é rock! Adora assistir filmes e séries, além d
                         </div>
                     </div>
                     <div class="imagem">
-                        <img class="time" src="../Acesso/imagens/Capturar.JPG" alt="Rafael">
+                        <img class="time" src="../imagens/Capturar.JPG" alt="Rafael">
                         <div class="texto">
                             <p class="padding"><b>Menor Aprendiz</b><br>Jogador de LOL, Valorant, CS, entre outros.
                                 Toca bateria, violão e guitarra.
@@ -250,7 +250,7 @@ Seu estilo favorito de música é rock! Adora assistir filmes e séries, além d
                 </p>
 
                 <picture>
-                    <img src="../Acesso/imagens/sitekabum.png" alt="Site KaBuM">
+                    <img src="../imagens/sitekabum.png" alt="Site KaBuM">
                 </picture>
             </section>
 
@@ -268,7 +268,7 @@ Seu estilo favorito de música é rock! Adora assistir filmes e séries, além d
                 </p>
 
                 <picture>
-                    <img class="image_kbm" src="../Acesso/imagens/logo-kabum-esports.png" alt="Site KaBuM">
+                    <img class="image_kbm" src="../imagens/logo-kabum-esports.png" alt="Site KaBuM">
                 </picture>
             </section>
 
@@ -297,20 +297,19 @@ Seu estilo favorito de música é rock! Adora assistir filmes e séries, além d
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../../BackEnd/Acesso/request/request.js"></script> 
-    <script src="../../BackEnd/Acesso/carrossel/slick.js"></script> 
-    <script src="../../BackEnd/Acesso/carrossel/slick.min.js"></script>
+    <script src="../../BackEnd/Plugins/slick.js"></script> 
+    <script src="../../BackEnd/Plugins/slick.min.js"></script>
     <script src="../../BackEnd/Acesso/js/js_acesso.js"></script> 
     <script src="../../BackEnd/Acesso/js/ajax.js"></script> 
     <script src="../../BackEnd/Acesso/js/comentario.js"></script> 
-    <script src="../../BackEnd/Acesso/js/notify.js"></script> 
-    <script src="../../BackEnd/Acesso/js/notify.min.js"></script> 
+    <script src="../../BackEnd/Plugins/notify.js"></script> 
+    <script src="../../BackEnd/Plugins/notify.min.js"></script>  
 
     <!-- JS -->
     <script>
         $("#sair").on("click", function(){{
             setTimeout("document.location = '../Login/login.html'",500);
         }}); 
-        
     </script>
 </body>
 </html
