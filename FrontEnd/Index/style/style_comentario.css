@@ -1,3 +1,15 @@
+/* Tags */
+
+textarea{
+    padding: 0;
+    border-radius: 1rem;
+    padding: 8px;
+    color: #000;
+    margin-left: -1rem;
+}
+
+/* Class */
+
 .nome{
     padding: 1rem;
     margin: 0;
@@ -39,31 +51,11 @@
     width: 1rem;
 }
 
-textarea{
-    padding: 0;
-    border-radius: 1rem;
-    padding: 8px;
-    color: #000;
-    margin-left: -1rem;
-}
-
 .inputcomment{
     border-radius: 12px;
     border: 1px solid #000;
     width: 15rem;
     padding: 4px;
-}
-
-#enviar{
-    padding: 5px;
-    border: 0px solid;
-    border-radius: 2rem;
-    cursor: pointer;
-    background-color: #DCDCDC;
-    width: 7rem;
-    height: 4rem;
-    margin-left: 55rem;
-    font-size: 20px;
 }
 
 .container{
@@ -83,3 +75,16 @@ textarea{
     margin-top: -1rem;
 }
 
+/* IDS */
+
+#enviar{
+    padding: 5px;
+    border: 0px solid;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: #DCDCDC;
+    width: 7rem;
+    height: 4rem;
+    margin-left: 55rem;
+    font-size: 20px;
+}

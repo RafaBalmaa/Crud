@@ -45,6 +45,7 @@ session_start();
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Quasi numquam, atque nesciunt ipsum<br> fugiat, doloremque explicabo facilis libero voluptas nihil voluptates<br>nisi enim adipisci temporibus! Eius eum temporibus placeat et?</p>
         <div class='tabela_usuario'>
         <button class="botao-abrir-modal"><img class="imagem-modal" src="https://cdn1.iconfinder.com/data/icons/general-ui-outlined-thick/24/edit-256.png" alt="ok"></button>
+            
                 <h1>Dados</h1>
                 <h3>Nome: <?php echo$_SESSION['nome'];?></h3>
                 <h3>CPF: <?php echo $_SESSION['cpf'];?><h3>
@@ -60,7 +61,6 @@ session_start();
         
     </div>
     <div id="modall">
-    
         <div class="modal-container"> 
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">x</span>
@@ -105,10 +105,18 @@ session_start();
     <script src="../../../BackEnd/Index/js/perfilcomentario.js"></script>
     <script src="../../../BackEnd/Index/js/modal.js"></script>
     <script src="../../../BackEnd/Index/js/ajaxalteracao.js"></script>
-    <script src="../../../BackEnd/Plugins/jquery.mask.js"></script>
+    <script src="../../../https://open.spotify.com/track/4EpZ4eYuZOwPSSwyqpdHnJ?si=d31d62ed478243b4BackEnd/Plugins/jquery.mask.js"></script>
     <script src="../../../BackEnd/Plugins/notify.js"></script> 
     <script src="../../../BackEnd/Plugins/notify.min.js"></script> 
+    <script src="../../../BackEnd/Plugins/jquery.mask.js"></script>
 
     <!-- JS -->
+    <script>
+    $(document).ready(function() {
+        $('#cpf').mask('000.000.000-00');
+        $('#cep').mask('00000-000');
+        $('#telefone').mask('(00) 00000-0000');
+        });
+</script>
 </body>
 </html>

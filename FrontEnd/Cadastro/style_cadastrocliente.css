@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-    /* tags */
-    
+/* tags */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to right, #0000FF, #FF4500);
@@ -24,7 +24,7 @@ legend {
     background-color: #FF4500;
 }
 
-    /* #ID */
+/* #ID */
 
 #submit {
     background-color: #DCDCDC;
@@ -47,7 +47,7 @@ legend {
     position: relative;
 }
 
-    /* .class */
+/* .class */
 
 .inputbox {
     position: relative;

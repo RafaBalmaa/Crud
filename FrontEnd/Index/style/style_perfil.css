@@ -23,6 +23,7 @@
 }
 
     /* Tags */
+
 * {
     margin: 0px;
     padding: 0px;
@@ -68,6 +69,16 @@ a{
     color: #fff;
 }
 
+h3{
+    font-weight: 500;
+}
+
+hr{
+    margin-bottom: 2rem;
+}
+
+/* CLASS */
+
 .logo {
     width: 8rem;
     margin: 13px;
@@ -79,56 +90,18 @@ a{
     justify-content: space-between;
 }
 
-#login{
-    text-align: center;
-    padding: 9px;
-    margin-right: 1rem;
-    color: var(--cor8);
-    font-size: 20px;
-    font-weight: bold;
-    
-}
-
-#informacoes{
-    background-color: #dcdbd8;
-    padding: 1rem;
-    transform: translateY(3rem);
-}
-
-#div{
-    padding: 0rem;
-    width: 100%;
-}
-
 .container_nome{
     font-size: 1rem
-}
-
-#foto_usuario{
-    width: 9rem;
-    border-radius: 7rem;
-    padding: 1rem;
-    margin: 7px;
 }
 
 .container_descricao{
     font-size: 16px;
 }
 
-#container_foto{
-    display: flex;
-    align-items: flex-start;
-    line-height: 30px;
-    transform: translateX(1rem) translateY(4rem);
-}
-
 .tabela_usuario{
     display: grid;
     justify-content: space-around;
     transform: translateX(42rem) translateY(-11rem);
-}
-h3{
-    font-weight: 500;
 }
 
 .creditos{
@@ -218,10 +191,6 @@ h3{
     font-size: 26px;
 }
 
-#encerrar{
-    font-size:20px ;
-}
-
 .imagem-modal{
     width: 22px;
     margin-top: 1px;
@@ -286,10 +255,6 @@ h3{
     margin-left: 2px;
 }
 
-hr{
-    margin-bottom: 2rem;
-}
-
 .titulo_alterar{
     font-size: 25px;
     margin-bottom: 2rem;
@@ -299,6 +264,17 @@ hr{
     font-size: 21px;
     display: block;
 }
+
+
+.close{
+    transform: translate(21rem, 7rem);
+    border: none;
+    background: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* IDS */
 
 #enviar_modal{
     width: 9rem;
@@ -313,10 +289,41 @@ hr{
     cursor: pointer;
 }
 
-.close{
-    transform: translate(21rem, 7rem);
-    border: none;
-    background: #fff;
-    font-size: 2rem;
-    cursor: pointer;
+#login{
+    text-align: center;
+    padding: 9px;
+    margin-right: 1rem;
+    color: var(--cor8);
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+#informacoes{
+    background-color: #dcdbd8;
+    padding: 1rem;
+    transform: translateY(3rem);
+}
+
+#div{
+    padding: 0rem;
+    width: 100%;
+}
+
+#foto_usuario{
+    width: 9rem;
+    border-radius: 7rem;
+    padding: 1rem;
+    margin: 7px;
+}
+
+#container_foto{
+    display: flex;
+    align-items: flex-start;
+    line-height: 30px;
+    transform: translateX(1rem) translateY(4rem);
+}
+
+#encerrar{
+    font-size:20px ;
 }

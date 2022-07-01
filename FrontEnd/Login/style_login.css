@@ -16,21 +16,6 @@ label {
     padding: 0px;
 }
 
-#entrar  {
-    background-color: #DCDCDC;
-    border: none;
-    padding: 15px;
-    width: 130px;
-    border-radius: 130px;
-    color: #000;
-    font-size: 20px;
-}
-
-#entrar:hover {
-    background-color: #DCDCDC;
-    cursor: pointer;
-}
-
 a {
     font-size: 18px;
     color: #DCDCDC;
@@ -51,6 +36,21 @@ a {
     outline: none;
     width: 201px;
     margin-bottom: 15px;
+}
+
+#entrar  {
+    background-color: #DCDCDC;
+    border: none;
+    padding: 15px;
+    width: 130px;
+    border-radius: 130px;
+    color: #000;
+    font-size: 20px;
+}
+
+#entrar:hover {
+    background-color: #DCDCDC;
+    cursor: pointer;
 }
 
 /* class */

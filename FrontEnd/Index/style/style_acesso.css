@@ -33,8 +33,6 @@ body{
     font-family: var(--fonte-padrao);
 }
 
-
-
 header {
     position: fixed;
     z-index: 9999;
@@ -153,8 +151,6 @@ b {
     font-size: 25px;
 }
 
-
-
 abbr {
     border-radius: 3rem;
     padding: 5px;
@@ -185,6 +181,11 @@ a:-webkit-any-link {
     color: var(--cor8);
     font-size: 17px;
     font-weight: bold;
+}
+
+#usuarioLogin{
+    font-size: 1rem;
+    
 }
 
     /* .Class */
@@ -265,11 +266,6 @@ a:-webkit-any-link {
     margin: 0 auto;
 }
 
-/* .perifericos{
-    width: 100%;
-    padding: 10px;
-} */
-
 .slick-prev::before, .slick-next::before {
     font-family: slick;
     font-size: 20px;
@@ -294,7 +290,6 @@ a:-webkit-any-link {
 }
 
 /* CADEIRA */
-
 
 .cadeira1{
     width: 100%;
@@ -340,7 +335,6 @@ a:-webkit-any-link {
     box-shadow: 0px 29px 17px -42px #000;
     border-radius: 54px;
 }
-
 
 .mouse3{
     width: 100%;
@@ -453,10 +447,6 @@ a:-webkit-any-link {
     transform: translateX(24px);
 }
 
-#usuarioLogin{
-    font-size: 1rem;
-    
-}
 
 .sessao{
     padding: 6px;
