@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+    /* tags */
+    
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #0000FF, #FF4500);
+}
+
+img {
+    position: absolute;
+    width: 40%;
+    left: 55%;
+}
+
+fieldset {
+    border: 3px solid #FF4500;
+}
+
+legend {
+    border: 1px solid #FF4500;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #FF4500;
+}
+
+    /* #ID */
+
+#submit {
+    background-color: #DCDCDC;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 20px;
+    padding: 18px;
+    color: #000;
+    font-size: 18px;
+    border: none;
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#data_nascimento {
+    border-radius: 12px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+    /* .class */
+
+.inputbox {
+    position: relative;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.inputuser {
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 18px;
+    width: 100%;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 15px;
+    width: 60%;
+    color: #fff;
+}

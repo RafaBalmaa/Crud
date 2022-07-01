@@ -1,0 +1,84 @@
+.nome{
+    padding: 1rem;
+    margin: 0;
+    padding-bottom: 25px;
+    margin-left: 0rem;
+}
+
+.email{
+    color: #000;
+    margin-left: 1rem;
+}
+
+.comentario{
+    margin: auto;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+    transform: translate(4px, 0px);
+    font-size: 17px;
+    width: 60rem;
+    
+}
+
+.boxx{
+    display: grid;
+    align-items: flex-start;
+    padding: 0;
+    margin-top: 2rem;
+    padding-right: 60.5rem;
+}
+
+.divisoria{ 
+    padding-left: 60rem;
+    box-shadow: 0px -3px 17px -5px #000000db;
+}
+
+.commenttbox{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 1rem;
+}
+
+textarea{
+    padding: 0;
+    border-radius: 1rem;
+    padding: 8px;
+    color: #000;
+}
+
+.inputcomment{
+    border-radius: 12px;
+    border: 1px solid #000;
+    width: 15rem;
+    padding: 4px;
+}
+
+#enviar{
+    padding: 5px;
+    border: 0px solid;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: #DCDCDC;
+    width: 7rem;
+    height: 4rem;
+    margin-left: 55rem;
+    font-size: 20px;
+}
+
+.container{
+    margin-top: 1rem;
+}
+
+.nome{
+    color: #000;
+}
+
+.email{
+    padding-bottom: 4px;
+}
+
+.datahora{
+    margin-left: 46rem;
+    margin-top: -1rem;
+}
+

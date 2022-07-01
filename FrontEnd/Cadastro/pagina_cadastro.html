@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../FrontEnd/Cadastro/Favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../FrontEnd/Cadastro/style_cadastrocliente.css" />
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="box">
+        <form method="POST" autocomplete="off">
+            <fieldset>
+                <legend><b>Formulario de Cadastro</b></legend>
+                <a href="../Login/login.html"><img src="Favicon/Kabum.png" alt=""/></a>
+                <!-- USUARIO -->
+                
+                <div class="inputbox">
+                        <label for="nome" class="labelinput">Usuario</label>
+                        <input id="usuario" type="text" name="usuario" class="inputuser" placeholder="Usuario" />
+                </div>
+
+                <!-- NOME -->
+                <div class="inputbox">
+                        <label for="nome" class="labelinput">Nome Completo</label>
+                        <input id="nome" type="text" name="nome" class="inputuser" placeholder="Nome" />
+                </div>
+
+                <!-- CPF -->
+                <div class="inputbox">
+                    <label for="cpf">CPF</label>
+                    <input id="cpf" type="text" name="CPF" class="inputuser"  placeholder="xxx.xxx.xxx-xx" />
+                </div>
+
+                <!-- EMAIL -->
+                <div class="inputbox">
+                    <label for="email" class="labelinput">Email</label>
+                    <input id="email" type="text" name="email" class="inputuser" placeholder="exemplo@gmail.com" />
+                </div>
+
+                <!-- SENHA -->
+                <div class="inputbox">
+                    <label for="senha" class="labelinput">Senha</label>
+                    <input id="senha" type="password" name="senha" class="inputuser" placeholder="*********"  />
+                </div>
+
+                <!-- TEL -->
+                <div class="inputbox">
+                    <label for="telefone" class="labelinput">Telefone</label>
+                    <input id="telefone"  type="tel" name="telefone" placeholder="(xx)xxxxx-xxxx" class="inputuser"  />
+                </div>
+
+                <!-- CEP -->
+                <div class="inputbox">
+                    <label for="cep">CEP</label>
+                    <input id="cep" type="text" name="CEP" class="inputuser" placeholder="xxxxx-xxx" />
+                </div>
+
+                <!-- BOTAO -->
+                <div class="inputbox">  
+                    <input type="button" value="entrar" id="submit" name="entrar">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <!-- code CD -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../../BackEnd/Cadastros/request/request.js"></script>
+    <script src="../../BackEnd/Cadastros/js/ajax_login.js"></script>
+    <script src="../../BackEnd/Cadastros/notify/jquery.mask.js"></script>
+    <script src="../../BackEnd/Cadastros/notify/notify.js"></script>
+    <script src="../../BackEnd/Cadastros/notify/notify.min.js"></script>
+    
+    <!-- code CD -->
+    <script>
+        $(document).ready(function() {
+            $('#cep').mask('00000-000');
+            $('#telefone').mask('(00) 00000-0000');
+            $('#cpf').mask('000.000.000-00');
+        });
+    </script>
+</body>
+</html>
