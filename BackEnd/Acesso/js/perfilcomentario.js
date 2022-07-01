@@ -14,7 +14,7 @@
     // DARK MODE //
     $(".checkbox").click(function(){
         if( $(".checkbox" ).prop( "checked" ) ){
-            $('header').css('background', '#fff');
+            $('header').css('background', '#000');
             $('body').css('background', '#393939');
             $('#informacoes').css('background', '#e3e3e3db');
             $('.container').css('background', '#e3e3e3db');
