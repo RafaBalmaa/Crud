@@ -4,7 +4,7 @@ $("#enviar").on("click", async function(){
         if(comentario != ''){
         //ajax
         await $.ajax({
-            url:"../../BackEnd/Acesso/php/acesso.php",
+            url:"../../BackEnd/Index/php/acesso.php",
             method:"POST",
             dataType:"json",
             data:{

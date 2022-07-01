@@ -1,7 +1,7 @@
     function comentario(){
 
         $.ajax({
-            url:"../../../BackEnd/Acesso/php/perfill.php",
+            url:"../../../BackEnd/Index/php/perfill.php",
             method:"POST",
 
             success: function(data){

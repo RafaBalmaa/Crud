@@ -1,7 +1,7 @@
     function comentarios(){
         
         $.ajax({
-            url: "../../BackEnd/Acesso/php/comentario.php",
+            url: "../../BackEnd/Index/php/comentario.php",
             method: "POST",
         
             success: function(data){

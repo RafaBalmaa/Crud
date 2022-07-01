@@ -17,9 +17,6 @@ require('../../LImpaPost/limpa.php');
     $validacao = $connect->prepare("SELECT * FROM Login WHERE email = ?"); 
     $validacao->bindParam(1,$email);
     $validacao->execute();
-    
-
-
 
 // Alterar Dados //
 
@@ -30,7 +27,6 @@ require('../../LImpaPost/limpa.php');
     $alterar-> bindParam(4, $telefone);
     $alterar-> bindParam(5, $cep);
     $alterar-> bindParam(6, $id);
-    
     if($alterar->execute()){
         
         $retorno = true;

@@ -10,7 +10,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
-    <link rel="shortcut icon" href="../../../FrontEnd/Acesso/imagens/Favicon/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../Favicon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../style/style_perfil.css" />
     
 </head>
@@ -19,10 +19,10 @@ session_start();
         <header id="header" class="header" >
             <div class="kabum">
                 <div>
-                    <a href="https://www.kabum.com.br" target="_blank"><img class="logo" src="../imagens/kabum-logo-1.png" alt="Logo KBM"></a>
+                    <a href="https://www.kabum.com.br" target="_blank"><img class="logo" src="../../imagens/kabum-logo-1.png" alt="Logo KBM"></a>
                 </div>
                 <div id="login">
-                    <a href="../../Acesso/Acessohtml.php"><p class="login">Olá, <?php echo $_SESSION['login'];?></p></a>
+                    <a href="../../Index/index.php"><p class="login">Olá, <?php echo $_SESSION['login'];?></p></a>
                     <input type="checkbox" class="checkbox" id="chk" name="tema" />
                     <label class="btn" for="chk">
                     <div class="ball">
@@ -101,13 +101,13 @@ session_start();
         <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../../../BackEnd/Acesso/request/request.js"></script>
-    <script src="../../../BackEnd/Acesso/js/perfilcomentario.js"></script>
-    <script src="../../../BackEnd/Acesso/js/modal.js"></script>
-    <script src="../../../BackEnd/Acesso/js/ajaxalteracao.js"></script>
-    <script src="../../../BackEnd/Cadastros/notify/jquery.mask.js"></script>
-    <script src="../../../BackEnd/Cadastros/notify/notify.js"></script>
-    <script src="../../../BackEnd/Cadastros/notify/notify.min.js"></script>
+    <script src="../../../BackEnd/Index/request/request.js"></script>
+    <script src="../../../BackEnd/Index/js/perfilcomentario.js"></script>
+    <script src="../../../BackEnd/Index/js/modal.js"></script>
+    <script src="../../../BackEnd/Index/js/ajaxalteracao.js"></script>
+    <script src="../../../BackEnd/Plugins/jquery.mask.js"></script>
+    <script src="../../../BackEnd/Plugins/notify.js"></script> 
+    <script src="../../../BackEnd/Plugins/notify.min.js"></script> 
 
     <!-- JS -->
 </body>

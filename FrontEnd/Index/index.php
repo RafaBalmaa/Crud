@@ -103,9 +103,9 @@ session_start();
                     <abbr class="text-white" title="Mouses Gamer">Mouses Gamer</abbr>
                     <div class="carousel">
                         <div><img class="mouse1" src="../imagens/mouse1.png" alt=""/></div>
-                        <div><img class="mouse2" src="../imagens/mouse2-.png" alt=""/></div>
-                        <div><img class="mouse3" src="../imagens//mouse3-.png" alt=""/></div>
-                        <div><img class="mouse4" src="../imagens/mouse4-.png" alt=""/></div>
+                        <div><img class="mouse2" src="../imagens/mouse2.png" alt=""/></div>
+                        <div><img class="mouse3" src="../imagens//mouse3.png" alt=""/></div>
+                        <div><img class="mouse4" src="../imagens/mouse4.png" alt=""/></div>
                     </div>
                     <abbr class="text-white" title="Teclados Gamer">Teclados Gamer</abbr>
                     <div class="carousel">
@@ -296,12 +296,12 @@ Seu estilo favorito de música é rock! Adora assistir filmes e séries, além d
     </main>
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="../../BackEnd/Acesso/request/request.js"></script> 
+    <script src="../../BackEnd/Index/request/request.js"></script> 
     <script src="../../BackEnd/Plugins/slick.js"></script> 
     <script src="../../BackEnd/Plugins/slick.min.js"></script>
-    <script src="../../BackEnd/Acesso/js/js_acesso.js"></script> 
-    <script src="../../BackEnd/Acesso/js/ajax.js"></script> 
-    <script src="../../BackEnd/Acesso/js/comentario.js"></script> 
+    <script src="../../BackEnd/Index/js/js_acesso.js"></script> 
+    <script src="../../BackEnd/Index/js/ajax.js"></script> 
+    <script src="../../BackEnd/Index/js/comentario.js"></script> 
     <script src="../../BackEnd/Plugins/notify.js"></script> 
     <script src="../../BackEnd/Plugins/notify.min.js"></script>  
 

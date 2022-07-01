@@ -12,7 +12,7 @@ $("#enviar_modal").on("click",async function(){
     // AJAX
     
         await $.ajax({
-            url: "../../../BackEnd/Acesso/php/alteracao.php",
+            url: "../../../BackEnd/Index/php/alteracao.php",
             type: "POST",
             dataType: "json",
             data:{
@@ -26,7 +26,7 @@ $("#enviar_modal").on("click",async function(){
                 if(retorno.retorno){
                     
                     $.notify("Alteração feita com sucesso",'success');
-                    setTimeout("document.location = '../../Acesso/paginas/perfil.php'",2000);
+                    setTimeout("document.location = '../../Index/paginas/perfil.php'",2000);
                 }else{
                     $.notify("Erro ao Alterar",'error');
                 }
