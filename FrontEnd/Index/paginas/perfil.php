@@ -102,10 +102,7 @@ session_start();
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../../../BackEnd/Index/request/request.js"></script>
-    <script src="../../../BackEnd/Index/js/perfilcomentario.js"></script>
-    <script src="../../../BackEnd/Index/js/modal.js"></script>
-    <script src="../../../BackEnd/Index/js/ajax_update.js"></script>
-    <script src="../../../https://open.spotify.com/track/4EpZ4eYuZOwPSSwyqpdHnJ?si=d31d62ed478243b4BackEnd/Plugins/jquery.mask.js"></script>
+    <script src="../../../BackEnd/Index/request/perfil.js"></script>
     <script src="../../../BackEnd/Plugins/notify.js"></script> 
     <script src="../../../BackEnd/Plugins/notify.min.js"></script> 
     <script src="../../../BackEnd/Plugins/jquery.mask.js"></script>

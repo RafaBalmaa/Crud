@@ -1,3 +1,5 @@
+// Exibir Comentario //
+    
     function comentario(){
 
         $.ajax({
@@ -11,7 +13,7 @@
     }
     comentario();
 
-    // DARK MODE //
+// DARK MODE //
     $(".checkbox").click(function(){
         if( $(".checkbox" ).prop( "checked" ) ){
             $('header').css('background', '#000');
@@ -27,6 +29,26 @@
             $('.titulo').css('background', '#0c0c6d');
         };
     })
+
+// MODAL //
+
+const getElement = (...queries) => document.querySelector(...queries);
+    
+const button = getElement('.botao-abrir-modal');
+const container = getElement('.modal-container');
+const modal = getElement('.modal');
+
+const activeModalClass = 'modal-show';
+
+const openModal = () => container.classList.add(activeModalClass);
+const closeModal = () => container.classList.remove(activeModalClass);
+
+button.addEventListener('click', openModal);
+container.addEventListener('click', (event) => {
+    if (modal.contains(event.target)) return;
+    
+    closeModal();
+});
 
 
 
