@@ -10,8 +10,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina De Acesso</title>
     <link rel="shortcut icon" href="../Favicon/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="style/slick.css" /> 
-    <link rel="stylesheet" type="text/css" href="style/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="style/style-slick/slick.css" /> 
+    <link rel="stylesheet" type="text/css" href="style/style-slick/slick-theme.css" />
     <link rel="stylesheet" href="style/style_acesso.css" />
     <link rel="stylesheet" href="style/style_comentario.css" />
 </head>
@@ -299,8 +299,8 @@ Seu estilo favorito de música é rock! Adora assistir filmes e séries, além d
     <script src="../../BackEnd/Index/request/request.js"></script> 
     <script src="../../BackEnd/Plugins/slick.js"></script> 
     <script src="../../BackEnd/Plugins/slick.min.js"></script>
-    <script src="../../BackEnd/Index/js/js_acesso.js"></script> 
-    <script src="../../BackEnd/Index/js/ajax.js"></script> 
+    <script src="../../BackEnd/Index/js/index.js"></script> 
+    <script src="../../BackEnd/Index/js/ajax_comentario.js"></script> 
     <script src="../../BackEnd/Index/js/comentario.js"></script> 
     <script src="../../BackEnd/Plugins/notify.js"></script> 
     <script src="../../BackEnd/Plugins/notify.min.js"></script>  

@@ -1,5 +1,7 @@
-const getElement = (...queries) => document.querySelector(...queries);
+// MODAL //
 
+const getElement = (...queries) => document.querySelector(...queries);
+    
 const button = getElement('.botao-abrir-modal');
 const container = getElement('.modal-container');
 const modal = getElement('.modal');
@@ -11,7 +13,7 @@ const closeModal = () => container.classList.remove(activeModalClass);
 
 button.addEventListener('click', openModal);
 container.addEventListener('click', (event) => {
-	if (modal.contains(event.target)) return;
-	
-	closeModal();
+    if (modal.contains(event.target)) return;
+    
+    closeModal();
 });

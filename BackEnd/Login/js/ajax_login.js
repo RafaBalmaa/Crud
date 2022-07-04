@@ -7,7 +7,7 @@ $("#entrar").on("click", async function(){
 
     // AJAX
             await $.ajax({
-            url: "../../BackEnd/Login/php/loginbackend.php",
+            url: "../../BackEnd/Login/php/back_login.php",
             type: "post",
             dataType: "json",
             data:{
@@ -15,7 +15,6 @@ $("#entrar").on("click", async function(){
                 senha: senha,
             },
             success: function (retorno){
-                console.log(retorno);
                 if (retorno.retorno){
                     $.notify("Acesso concedido redirecionando...", 'success');
                     setTimeout("document.location = '../../FrontEnd/Index/index.php'",1500);

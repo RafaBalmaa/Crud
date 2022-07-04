@@ -39,3 +39,5 @@ $('.carousel').slick({
             $('main').css('background', '#fff');    
         };
     });
+
+
