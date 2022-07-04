@@ -13,21 +13,6 @@ require('../../Conexao/conexao.php');
     ON L.id = C.id_usuario
     ");
     $selecionar->execute();
-    
-    echo"<div class = 'boxx'>
-        <table class='tabela'>
-    </div>";
-
-    while($resultado = $selecionar->fetch()){
-
-        echo "<div class='container'>
-        <div class='inputbox'>
-                <h1 class = 'nome'>{$resultado['usuario']}</h1>
-                <h4 class = 'email'>{$resultado['email']} </h4>
-                <p class = 'comentario'>{$resultado['comentario']}</p>
-                <p class = 'datahora'>{$resultado['data']}</p> 
-            </div>
-        </div>";
-    }
-    echo"</table>";
+    $resultado = $selecionar->fetchAll(PDO::FETCH_ASSOC);
+    echo json_encode($resultado);
 ?>    

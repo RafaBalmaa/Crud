@@ -28,3 +28,4 @@ $("#entrar").on("click", async function(){
             $.notify("Dados nao podem ser vazios, Preencha novamente",'error');
         };
 });
+
