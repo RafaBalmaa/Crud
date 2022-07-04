@@ -299,9 +299,9 @@ Seu estilo favorito de música é rock! Adora assistir filmes e séries, além d
     <script src="../../BackEnd/Index/request/request.js"></script> 
     <script src="../../BackEnd/Plugins/slick.js"></script> 
     <script src="../../BackEnd/Plugins/slick.min.js"></script>
-    <script src="../../BackEnd/Index/js/index.js"></script> 
-    <script src="../../BackEnd/Index/js/ajax_comentario.js"></script> 
-    <script src="../../BackEnd/Index/js/comentario.js"></script> 
+    <script src="../../BackEnd/Index/request/index.js"></script> 
+    <script src="../../BackEnd/Index/request/ajax_comentario.js"></script> 
+    <script src="../../BackEnd/Index/request/comentario.js"></script> 
     <script src="../../BackEnd/Plugins/notify.js"></script> 
     <script src="../../BackEnd/Plugins/notify.min.js"></script>  
 
