@@ -25,7 +25,7 @@ session_start();
                     alt="Logo KBM"></a>
                 </div>
                 <div id="login">
-                <p class="usuarioLogin">Olá, <?php echo $_SESSION['login'];?></p>
+                <p class="usuarioLogin">Olá, </p>
                             <label><a href="paginas/perfil.php" class="sessao" target="_blank" rel="external">Minha Conta</a></label>
                             <label><a id="sair" class="sessao" href="#">Encerrar Sessão</a></label>
                     </div>
@@ -169,7 +169,8 @@ session_start();
                         <img class="time" src="../imagens/Eric.JPG" alt="Eric">
                         <div class="texto">
                             <p class="padding"><b>Analista de Desenvolvimento de Sistemas</b><br>
-Seu estilo favorito de música é rock! Adora assistir filmes e séries, além de platinar jogos do PS4. Apaixonado por programação e trabalhar como Dev. </p>
+                            Seu estilo favorito de música é rock! Adora assistir filmes e séries, além de platinar jogos do PS4. 
+                            Apaixonado por programação e trabalhar como Dev. </p>
                         </div>
                     </div>
                     <div class="imagem">
@@ -307,6 +308,8 @@ Seu estilo favorito de música é rock! Adora assistir filmes e séries, além d
         $("#sair").on("click", function(){{
             setTimeout("document.location = '../Login/login.html'",500);
         }}); 
+
+        
     </script>
 </body>
 </html

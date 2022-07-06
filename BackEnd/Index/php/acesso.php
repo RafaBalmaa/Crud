@@ -7,7 +7,7 @@ require('../../LImpaPost/limpa.php');
 $comentario = limpaPost($_POST['comentario']);
 $id_usuario = $_SESSION['id_usuario'];
 
-//  
+// inserir // 
 
     if($inserir = $connect->prepare("INSERT INTO Comentario (comentario,id_usuario,datahora) VALUES (?,?,CURRENT_TIMESTAMP)")) { 
         $inserir->bindParam(1, $comentario);
@@ -19,7 +19,7 @@ $id_usuario = $_SESSION['id_usuario'];
         $retorno = false;
     }
 
-//
+// json_encode //
 
     echo json_encode(array(
         "retorno"=> $retorno,

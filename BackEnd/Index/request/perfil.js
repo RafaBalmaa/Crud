@@ -1,17 +1,3 @@
-// Exibir Comentario //
-    
-    function comentario(){
-
-        $.ajax({
-            url:"../../../BackEnd/Index/php/perfill.php",
-            method:"POST",
-
-            success: function(data){
-                $("#div").html(data);
-            }
-        })
-    }
-    comentario();
 
 // DARK MODE //
     $(".checkbox").click(function(){
@@ -49,6 +35,50 @@ container.addEventListener('click', (event) => {
     
     closeModal();
 });
+
+// Alteração // 
+
+$("#enviar_modal").on("click",async function(){
+    var nome = $("#nome").val();
+    var cpf = $("#cpf").val();
+    var email = $("#email").val();
+    var telefone = $("#telefone").val();
+    var cep = $("#cep").val();
+    
+    
+    // ajax //
+    
+        await $.ajax({
+            url: "../../../BackEnd/Index/php/alteracao.php",
+            type: "POST",
+            dataType: "json",
+            data:{
+                nome: nome,
+                cpf: cpf,
+                email: email,
+                telefone: telefone,
+                cep: cep
+            },
+            success: function (retorno){
+                if(retorno.retorno){
+                    
+                    $.notify("Alteração feita com sucesso",'success');
+                    setTimeout("document.location = '../../Index/paginas/perfil.php'",2000);
+                }else{
+                    $.notify("Erro ao Alterar",'error');
+                }
+            }
+        });
+        
+});
+    $('.login').append(localStorage.getItem('usuario'));
+    $('.login_perfil').append(localStorage.getItem('usuario'));
+    $('.nome').append(localStorage.getItem('nome'));
+    $('.cpf').append(localStorage.getItem('cpf'));
+    $('.email').append(localStorage.getItem('email'));
+    $('.cep').append(localStorage.getItem('cep'));
+    $('.telefone').append(localStorage.getItem('telefone'));
+
 
 
 

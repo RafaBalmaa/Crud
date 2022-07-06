@@ -146,7 +146,7 @@ hr{
 }
 
 .email{
-    font-weight: 600;
+    font-weight: 0;
 }
 
 .checkbox {
@@ -308,6 +308,7 @@ hr{
 #div{
     padding: 0rem;
     width: 100%;
+    margin-top: -4rem;
 }
 
 #foto_usuario{
@@ -327,3 +328,4 @@ hr{
 #encerrar{
     font-size:20px ;
 }
+

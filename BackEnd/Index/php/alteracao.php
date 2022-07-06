@@ -18,7 +18,7 @@ require('../../LImpaPost/limpa.php');
     $validacao->bindParam(1,$email);
     $validacao->execute();
 
-// Alterar Dados //
+    // Alterar Dados //
 
     $alterar = $connect->prepare("UPDATE Login SET nome = ?, cpf = ?, email = ?, telefone = ?, cep = ? WHERE id = ? ");
     $alterar->bindParam(1,$nome);
