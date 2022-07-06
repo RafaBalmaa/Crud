@@ -4,7 +4,8 @@ $("#enviar").on("click", async function(){
     var comentario = $("#comentario").val();
 
         if(comentario != ''){
-        //ajax
+        //ajax //
+            
         await $.ajax({
             url:"../../BackEnd/Index/php/acesso.php",
             method:"POST",
