@@ -1,11 +1,10 @@
 <?php
-session_start();
 
 require('../../Conexao/conexao.php');
 require('../../LImpaPost/limpa.php');
 
 $comentario = limpaPost($_POST['comentario']);
-$id_usuario = $_SESSION['id_usuario'];
+$id_usuario = $_POST['id_usuario'];
 
 // inserir // 
 

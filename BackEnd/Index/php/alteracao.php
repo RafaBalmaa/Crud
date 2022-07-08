@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
 require('../../Conexao/conexao.php');
 require('../../LImpaPost/limpa.php');
@@ -10,7 +10,7 @@ require('../../LImpaPost/limpa.php');
     $telefone = limpaPost($_POST['telefone']);
     $cep = limpaPost($_POST['cep']);
     $usuario = limpaPost($_POST['usuario']);
-    $id = $_SESSION['id_usuario'];
+    $$id = limpaPost(['id_usuario']);
 
     // Validar // 
     
@@ -33,17 +33,10 @@ require('../../LImpaPost/limpa.php');
         $armazena = $connect->prepare("SELECT nome,cpf,email,cep,telefone FROM Login WHERE id = ? ");
         $armazena->bindParam(1,$id);
         $armazena->execute();  
-        $result = $armazena->fetch();
+        }else{
+            $retorno = false;
+        }
         
-            $_SESSION['nome']= $result[0];
-            $_SESSION['cpf']= $result[1];
-            $_SESSION['email']= $result[2];
-            $_SESSION['cep']= $result[3];
-            $_SESSION['telefone']= $result[4];
-    }else{
-        $retorno = false;
-    }
-    
     echo json_encode(array(
         "retorno"=> $retorno
     ));

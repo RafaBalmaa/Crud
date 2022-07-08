@@ -20,7 +20,7 @@ $("#entrar").on("click", async function(){
             success: function (retorno){
                 if (retorno.retorno){
                     $.notify("Acesso concedido redirecionando...", 'success');
-                    setTimeout("document.location = '../../FrontEnd/Index/index.php'",1500);
+                    setTimeout("document.location = '../../FrontEnd/Index/index.html'",1500);
                 }else {
                     $.notify("Usuario ou Senha incorretos ou nao encontrados", 'error');
                     $.notify("Tente Novamente ou faça registro",'error');
@@ -30,6 +30,7 @@ $("#entrar").on("click", async function(){
                 localStorage.setItem('cpf', retorno.cpf);
                 localStorage.setItem('cep', retorno.cep);
                 localStorage.setItem('telefone', retorno.telefone);
+                localStorage.setItem('id_usuario', retorno.id);
             },
         });
         localStorage.setItem('usuario', login);

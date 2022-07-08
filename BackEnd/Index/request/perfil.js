@@ -63,7 +63,7 @@ $("#enviar_modal").on("click",async function(){
                 if(retorno.retorno){
                     
                     $.notify("Alteração feita com sucesso",'success');
-                    setTimeout("document.location = '../../Index/paginas/perfil.php'",2000);
+                    setTimeout("document.location = '../../Index/paginas/perfil.html'",2000);
                 }else{
                     $.notify("Erro ao Alterar",'error');
                 }
@@ -78,6 +78,49 @@ $("#enviar_modal").on("click",async function(){
     $('.email').append(localStorage.getItem('email'));
     $('.cep').append(localStorage.getItem('cep'));
     $('.telefone').append(localStorage.getItem('telefone'));
+
+
+    // Exibir Comentario //
+
+    var id_usuario= localStorage.getItem("id_usuario");
+
+    $.ajax({
+        url: "../../../BackEnd/Index/php/perfill.php",
+        method:"GET",
+        data:{
+            id_usuario: id_usuario,
+        },
+        success: function(res){
+            console.log(JSON.parse(res));
+            var data = JSON.parse(res);
+            const exibir_comentario = data.map((dados)=> {
+
+                const {
+                    usuario,
+                    email,
+                    comentario,
+                    datahora } = dados;
+                return(`
+                    <div class="boxx">
+                        <table class="tabela">
+                            <div class="container">
+                                <div class="inputbox">
+                                    <h1 class= "nome">${usuario}</h1>
+                                    <h4 class= "email">${email}</h4>
+                                    <p  class= "comentario">${comentario}</p>
+                                    <p  class= "datahora">${datahora}</p> 
+                                </div>
+                            </div>
+                        </table>
+                    </div>
+                `)
+            });
+        $("#comment").append(exibir_comentario); 
+        }
+    });
+    
+    // Exibir Usuario //
+    $('.usuarioLogin').append(localStorage.getItem('usuario'));
 
 
 

@@ -2,6 +2,7 @@
 
 $("#enviar").on("click", async function(){
     var comentario = $("#comentario").val();
+    var id_usuario= localStorage.getItem("id_usuario");
 
         if(comentario != ''){
         //ajax
@@ -10,12 +11,12 @@ $("#enviar").on("click", async function(){
             method:"POST",
             dataType:"json",
             data:{
-                comentario: comentario
+                comentario: comentario,
+                id_usuario: id_usuario,
             },
             success: function(retorno){
                 if(retorno.retorno){
                     $.notify('Comentario Inserido!',{globalPosition:"bottom-right", className:"success"} );
-                    comentarios(); 
                     $("#comentario").val('');
                 }else{
                     $.notify("Comentario Nao Inserido, tente novamente!",{globalPosition:"bottom-right", className:"error"});
