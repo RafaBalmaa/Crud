@@ -6,6 +6,7 @@ require('../../LImpaPost/limpa.php');
 $comentario = limpaPost($_POST['comentario']);
 $id_usuario = $_POST['id_usuario'];
 
+
 // inserir // 
 
     if($inserir = $connect->prepare("INSERT INTO Comentario (comentario,id_usuario,datahora) VALUES (?,?,CURRENT_TIMESTAMP)")) { 
