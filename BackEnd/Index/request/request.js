@@ -5,7 +5,8 @@ $("#enviar").on("click", async function(){
     var id_usuario= localStorage.getItem("id_usuario");
 
         if(comentario != ''){
-        //ajax
+        //ajax //
+            
         await $.ajax({
             url:"../../BackEnd/Index/php/acesso.php",
             method:"POST",
