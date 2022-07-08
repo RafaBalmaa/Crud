@@ -32,9 +32,15 @@ const closeModal = () => container.classList.remove(activeModalClass);
 button.addEventListener('click', openModal);
 container.addEventListener('click', (event) => {
     if (modal.contains(event.target)) return;
-    
     closeModal();
+    
 });
+$('#nome').val(localStorage.getItem('nome'));
+$('#cpf').val(localStorage.getItem('cpf'));
+$('#email').val(localStorage.getItem('email'));
+$('#cep').val(localStorage.getItem('cep'));
+$('#telefone').val(localStorage.getItem('telefone'));
+
 
 // Alteração // 
 
@@ -44,10 +50,22 @@ $("#enviar_modal").on("click",async function(){
     var email = $("#email").val();
     var telefone = $("#telefone").val();
     var cep = $("#cep").val();
-    
-    
+    const id = localStorage.getItem("id_usuario");
+
+    const nomeStorage = localStorage.getItem('nome');
+    const cpfStorage = localStorage.getItem('cpf');
+    const emailStorage = localStorage.getItem('email');
+    const telefoneStorage = localStorage.getItem('telefone');
+    const cepStorage = localStorage.getItem('cep');
+
+    if(nome === nomeStorage && cpf=== cpfStorage && email === emailStorage && telefone === telefoneStorage && cep === cepStorage ){
+        $.notify("Voce nao Alterou nada!",'error');
+        // console.log(id);  
+    }else{
+
     // ajax //
     
+
         await $.ajax({
             url: "../../../BackEnd/Index/php/alteracao.php",
             type: "POST",
@@ -57,19 +75,20 @@ $("#enviar_modal").on("click",async function(){
                 cpf: cpf,
                 email: email,
                 telefone: telefone,
-                cep: cep
+                cep: cep,
+                id: id,
+                
             },
             success: function (retorno){
                 if(retorno.retorno){
-                    
                     $.notify("Alteração feita com sucesso",'success');
-                    setTimeout("document.location = '../../Index/paginas/perfil.html'",2000);
+                    // setTimeout("document.location = '../../Index/paginas/perfil.html'",2000);
                 }else{
                     $.notify("Erro ao Alterar",'error');
                 }
             }
         });
-        
+    }
 });
     $('.login').append(localStorage.getItem('usuario'));
     $('.login_perfil').append(localStorage.getItem('usuario'));
@@ -78,6 +97,7 @@ $("#enviar_modal").on("click",async function(){
     $('.email').append(localStorage.getItem('email'));
     $('.cep').append(localStorage.getItem('cep'));
     $('.telefone').append(localStorage.getItem('telefone'));
+    
 
 
     // Exibir Comentario //
