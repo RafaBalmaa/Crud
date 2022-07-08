@@ -3,9 +3,6 @@ $("#entrar").on("click", async function(){
     var login = $("#login").val();
     var senha = $("#senha").val();
 
-
-
-
     if(login != '' && senha != ''){
 
     // AJAX //

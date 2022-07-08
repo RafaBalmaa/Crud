@@ -10,7 +10,7 @@ require('../../LImpaPost/limpa.php');
     $telefone = limpaPost($_POST['telefone']);
     $cep = limpaPost($_POST['cep']);
     $usuario = limpaPost($_POST['usuario']);
-    $$id = limpaPost(['id_usuario']);
+    $id = ($_POST['id']);
 
     // Validar // 
     
@@ -20,27 +20,21 @@ require('../../LImpaPost/limpa.php');
 
     // Alterar Dados //
 
-    $alterar = $connect->prepare("UPDATE Login SET nome = ?, cpf = ?, email = ?, telefone = ?, cep = ? WHERE id = ? ");
-    $alterar->bindParam(1,$nome);
-    $alterar-> bindParam(2, $cpf);
-    $alterar-> bindParam(3, $email);
-    $alterar-> bindParam(4, $telefone);
-    $alterar-> bindParam(5, $cep);
-    $alterar-> bindParam(6, $id);
-    if($alterar->execute()){
-        
+    if($alterar = $connect->prepare("UPDATE Login SET nome = ?, cpf = ?, email = ?, telefone = ?, cep = ? WHERE id = ? ")){
+        $alterar-> bindParam(1, $nome);
+        $alterar-> bindParam(2, $cpf);
+        $alterar-> bindParam(3, $email);
+        $alterar-> bindParam(4, $telefone);
+        $alterar-> bindParam(5, $cep);
+        $alterar-> bindParam(6, $id);
+        $alterar->execute();
         $retorno = true;
-        $armazena = $connect->prepare("SELECT nome,cpf,email,cep,telefone FROM Login WHERE id = ? ");
-        $armazena->bindParam(1,$id);
-        $armazena->execute();  
         }else{
             $retorno = false;
         }
-        
+
+
     echo json_encode(array(
         "retorno"=> $retorno
     ));
-
-
-
 ?>
